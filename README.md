@@ -9,7 +9,7 @@ Sita
 
 # Whimsical Diagrams
 
-[Wireframe](https://whimsical.com/playlist-app-components-hierarchy-89CAtjSuKLxnVasnZuBadR)
+[Wireframe](https://whimsical.com/playlist-app-SqTKjPX7Z5AuVXJ4x3Khui@7YNFXnKbYr1avYXvB6BuM)
 
 [Component Heiarchy](https://whimsical.com/playlist-app-components-hierarchy-89CAtjSuKLxnVasnZuBadR)
 
