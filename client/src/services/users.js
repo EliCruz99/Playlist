@@ -37,6 +37,7 @@ export const verify = async () => {
   };
 };
 
+//User SignOut
 export const signOut = () => {
   try {
     localStorage.removeItem("token")

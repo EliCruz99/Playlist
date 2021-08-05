@@ -1,5 +1,7 @@
 import api from "./apiConfig";
 
+
+//Create Playlist
 export const createPlaylist = async (input) => {
   try {
     const res = await api.post("/playlist", input)
@@ -8,7 +10,9 @@ export const createPlaylist = async (input) => {
   } catch (error) {
     throw error
   }
-}
+};
+
+// Getting playlist
 export const getPlaylist = async (id) => {
   try {
     const res = await api.get(`/playlist/${id}`);
@@ -16,8 +20,9 @@ export const getPlaylist = async (id) => {
   } catch (e) {
     throw e;
   }
-}
+};
 
+// Deleting Plalist
 export const deletePlaylist = async (id) => {
   try {
     const res = await api.delete(`/playlist/${id}`);
@@ -26,6 +31,8 @@ export const deletePlaylist = async (id) => {
     throw e;
   }
 };
+
+// Updating playlist
 export const updatePlaylist = async (id) => {
   try {
     const res = await api.put(`/playlist/${id}`);
@@ -33,4 +40,4 @@ export const updatePlaylist = async (id) => {
   } catch (e) {
     throw e;
   }
-}
+};

@@ -1,10 +1,12 @@
 import jwt from "jsonwebtoken";
-const TOKEN_KEY = process.env.TOKEN_KEY || "12345689";
+const TOKEN_KEY = process.env.TOKEN_KEY || "123456789";
 
 const restrict = (req, res, next) => {
   try {
     const token = req.headers.authorization.split(" ")[1];
-    if (jwt.verify(token, TOKEN_KEY)) {
+    let user = jwt.verify(token, TOKEN_KEY);
+    if (user) {
+      req.user = user.id
       next();
     }
   } catch (e) {
@@ -14,4 +16,4 @@ const restrict = (req, res, next) => {
 };
 
 
-export default restrict
+export default restrict;
